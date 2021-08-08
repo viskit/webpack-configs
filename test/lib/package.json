@@ -1,0 +1,12 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"webpack --config ../../lib.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
