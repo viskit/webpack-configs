@@ -2,11 +2,11 @@
 
 webpack configs for build, start and library.
 
-#### Install
+### Install
 
     npm install -g @viskit/webpack-configs
 
-#### Output library
+### Output library
 
 Create `tsconfig.json` and create `src/index.ts`
 
@@ -31,7 +31,7 @@ module.exports = require("@viskit/webpack-configs").configs.lib
 ```
 
 
-#### Output build
+### Output build
 
 Create `tsconfig.json` and create `src/index.ts`
 
@@ -56,7 +56,7 @@ module.exports = require("@viskit/webpack-configs").configs.build
 ```
 
 
-#### webpack serve 
+### webpack serve 
 
 Create `tsconfig.json` and create `src/index.ts`
 
