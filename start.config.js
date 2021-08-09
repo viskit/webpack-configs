@@ -6,7 +6,7 @@ const dir = process.cwd();
 module.exports = merge(common, {
   entry: path.resolve(dir, "start/index.ts"),
   output: {
-    filename: "index.build.js",
+    filename: "index.js",
     path: path.resolve(dir, "start"),
   },
   devtool: "inline-source-map",
