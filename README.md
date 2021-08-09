@@ -6,7 +6,15 @@ webpack configs for build, start and library.
 
     npm install -g @viskit/webpack-configs
 
+
+
 ### Output library
+
+Create `types.d.ts`
+
+```ts
+declare module "*.css";
+```
 
 Create `tsconfig.json` and create `src/index.ts`
 

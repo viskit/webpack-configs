@@ -11,8 +11,8 @@
     "url": "git+https://github.com/viskit/webpack-configs.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Liang Zeng",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/viskit/webpack-configs/issues"
   },
