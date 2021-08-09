@@ -24,6 +24,7 @@ module.exports = merge(common, {
   experiments: {
     outputModule: true,
   },
+  externalsPresets: { node: true },
   target: "es2020",
   mode: "production",
   plugins: [new LicenseWebpackPlugin()],
