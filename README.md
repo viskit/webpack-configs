@@ -70,7 +70,7 @@ package.json
 
 ```json
 "scripts": {
-    "build" : "webpack"
+    "build" : "webpack serve"
 }
 ```
 
