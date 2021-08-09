@@ -2,89 +2,36 @@
 
 webpack configs for build, start and library.
 
-### Install
+### Use
 
-    npm install -g @viskit/webpack-configs
+#### Step 0 install
 
+    npm install @viskit/webpack-configs -D
 
+#### Step 1 package.json scripts
 
-### Output library
+```json
+"scripts": {
+  "start": "webpack serve --config node_modules/@viskit/webpack-configs/start.config.js",
+  "build": "webpack --config node_modules/@viskit/webpack-configs/build.config.js",
+  "build:lib": "webpack --config node_modules/@viskit/webpack-configs/lib.config.js"
+}
+```
 
-Create `types.d.ts`
+#### Step 2 create src|start dir `tsconfig.json`
+
+```json
+{
+  "extends": "@viskit/webpack-configs/tsconfig.base.json"
+}
+```
+
+#### Step 3 create src|start dir `types.d.ts`
 
 ```ts
 declare module "*.css";
 ```
 
-Create `tsconfig.json` and create `src/index.ts`
+# LICENSE
 
-```json
-{
-  "extends": "@viskit/webpack-configs/tsconfig.base.json"
-}
-```
-
-package.json
-
-```json
-"scripts": {
-    "build" : "webpack"
-}
-```
-
-webpack.config.js
-
-```js
-module.exports = require("@viskit/webpack-configs").configs.lib
-```
-
-
-### Output build
-
-Create `tsconfig.json` and create `src/index.ts`
-
-```json
-{
-  "extends": "@viskit/webpack-configs/tsconfig.base.json"
-}
-```
-
-package.json
-
-```json
-"scripts": {
-    "build" : "webpack"
-}
-```
-
-webpack.config.js
-
-```js
-module.exports = require("@viskit/webpack-configs").configs.build
-```
-
-
-### webpack serve 
-
-Create `tsconfig.json` and create `src/index.ts`
-
-```json
-{
-  "extends": "@viskit/webpack-configs/tsconfig.base.json"
-}
-```
-
-package.json
-
-```json
-"scripts": {
-    "build" : "webpack serve"
-}
-```
-
-webpack.config.js
-
-```js
-module.exports = require("@viskit/webpack-configs").configs.start
-```
-
+MIT
