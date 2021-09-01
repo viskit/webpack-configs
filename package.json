@@ -1,6 +1,6 @@
 {
   "name": "@viskit/webpack-configs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webpack configs for build, start and library.",
   "main": "index.js",
   "scripts": {
