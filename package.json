@@ -1,6 +1,6 @@
 {
   "name": "@viskit/webpack-configs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack configs for build, start and library.",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "crypto-browserify": "^3.12.0",
     "css-loader": "^6.2.0",
     "domain-browser": "^4.22.0",
+    "dotenv-webpack": "^7.0.3",
     "events": "^3.3.0",
     "https-browserify": "^1.0.0",
     "license-webpack-plugin": "^2.3.20",

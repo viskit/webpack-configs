@@ -1,4 +1,5 @@
 const path = require("path");
+const Dotenv = require("dotenv-webpack");
 
 const dir = process.cwd();
 
@@ -32,7 +33,13 @@ const conf = {
       zlib: require.resolve("browserify-zlib"),
     },
   },
-  plugins: [],
+  plugins: [
+    new Dotenv(),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+      Buffer: ['buffer', 'Buffer'],
+    }),
+  ],
   module: {
     rules: [
       {
